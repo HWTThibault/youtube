@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Positioning Practice</title>
 </head>
-<body>
+<body style="height: 3000px; padding-top: 60px; padding-left: 85px;">
+    <div style="height: 50px; right: 0px; left: 0px; top: 0px;background-color: black; color: white; position: fixed;">header</div>
+    <div style="background-color: green; color: white; position: fixed; left: 0; bottom: 0; top: 50px; width: 72px;">sidebar</div>
+    <div style="position: absolute; background-color: red; color: white; left: 10px; top: 10px; ">absolute</div>
     <div style="position: static; background-color: lightblue; height: 200px; width: 200px;">div 1</div>
-    <div style="background-color: lightpink; height: 200px; width: 200px;">div 2</div>
+    <div style="position: relative; background-color: lightpink; height: 200px; width: 200px;">
+        div 2
+        <div style="position: absolute; background-color: black; color: white; bottom: 10px; right: 10px;">5min</div>
+    </div>
 </body>
 </html>
